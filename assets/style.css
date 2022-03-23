@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+.hero{
+    width: 80%;
+    height: 550px;
+    position: relative;
+    margin: 80px auto;
+    overflow: hidden;
+}
+.btn-box{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.btn-box button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.btn-box .fab{
+    margin-right: 10px;
+}
+.btn-box button:hover{
+    color: #ff7846;
+    transition: all 0.2s linear;
+}
+/*---css content*/
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    position: absolute;
+    transform: translateX(100%);
+    transition: .3s;
+}
+.content-left{
+    flex-basis: 50%;
+}
+.content-left p{
+    font-size: 18px;
+    padding: 30px 0;
+}
+.content-left a{
+    display: block;
+    padding: 8px 5px;
+    text-decoration: none;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #ff7846;
+    text-align: center;
+    color: #fff;
+}
+.content-left a:hover{
+    opacity: .8;
+    transition: all 0.2s linear;
+}
+.content-right{
+    flex-basis: 50%;
+    text-align: center;
+}
+#content1{
+    transform: translateX(0px);
+}
+#btn1{
+    color: #ff7846;
+}
