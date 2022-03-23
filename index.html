@@ -14,9 +14,15 @@
 <body>
       <div class="hero">
           <div class="btn-box">
-              <button id="btn1" onclick="openHTML()"><i class="fab fa-html5"></i> HTML</button>
-              <button id="btn2" onclick="openCSS()"><i class="fab fa-css3"></i> CSS</button>
-              <button id="btn3" onclick="openJS()"><i class="fab fa-codepen"></i> JAVASCRIPT</button>
+              <div class="btn-list">
+                <button id="btn1" onclick="openHTML()"><i class="fab fa-html5"></i> HTML</button>
+                <button id="btn2" onclick="openCSS()"><i class="fab fa-css3"></i> CSS</button>
+                <button id="btn3" onclick="openJS()"><i class="fab fa-codepen"></i> JAVASCRIPT</button>  
+              </div>            
+              <div class="dark-mode">
+                <img id="icon" src="./img/moon_dark_mode_night-2-512.webp" alt="">
+              </div>
+            
           </div>
           <div id="content1" class="content">
               <div class="content-left">
@@ -72,9 +78,9 @@
       </div>
 
       <!--JS-->
-      <script src="./js/tabs.js">
-        
-      </script>
+      <script src="./js/tabs.js"></script>
+
+      <script src="./js/darkMode.js"></script>
 </body>
 </html>
 

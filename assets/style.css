@@ -4,6 +4,18 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
+:root{
+    --primary-color: #ff7846;
+    --secondary-color: #fff;
+    
+}
+.dark-theme{
+    --primary-color: #ff7846;
+    --secondary-color: #ccc;
+}
+body{
+    background-color: var(--secondary-color);
+}
 .hero{
     width: 80%;
     height: 550px;
@@ -13,6 +25,7 @@
 }
 .btn-box{
     display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #ccc;
 }
 .btn-box button{
@@ -28,7 +41,7 @@
     margin-right: 10px;
 }
 .btn-box button:hover{
-    color: #ff7846;
+    color: var(--primary-color);
     transition: all 0.2s linear;
 }
 /*---css content*/
@@ -54,7 +67,7 @@
     text-decoration: none;
     width: 150px;
     border-radius: 20px;
-    background-color: #ff7846;
+    background-color: var(--primary-color);
     text-align: center;
     color: #fff;
 }
@@ -70,5 +83,11 @@
     transform: translateX(0px);
 }
 #btn1{
-    color: #ff7846;
+    color: var(--primary-color);
+}
+#icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
 }
